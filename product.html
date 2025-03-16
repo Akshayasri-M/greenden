@@ -15,7 +15,7 @@
         <nav class="p-3 bg-green-100 flex items-center justify-between shadow-xl sticky top-0 z-10">
             <h1 class="text-2xl text-black font-medium">GREENDEN</h1>
 
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke-width="1.5"
+            <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6 md:hidden">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5 " />
             </svg>
@@ -35,13 +35,32 @@
             </ul>
 
         </nav>
+        <!-- Side Navbar -->
+        <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000 "style="width:50%; height:100% ; right:-50%">
+            <div class="text-right p-5">
+                <p id="closenav" class="inline cursor-pointer">X</p>
+            </div>
+            <ul class="flex flex-col items-start p-5 text-gray-700 gap-5  md:flex">
+                <li>
+                    <a class="hover:underline hover:text-black" href="index.html" target="_blank">Home</a>
+                </li>
+                <li>
+                    <a class="hover:underline hover:text-black" href="product.html" target="_blank">Products</a>
+                </li>
+                <li>
+                    <a class="hover:underline hover:text-black" href="contact.html"  target="_blank">Contact Us</a>
+                </li>
+
+            </ul>
+
+         </section>
 <!--Product Section-->
 <section class="p-5 m-5 text-center">
     <h1 class="text-3xl font-bold">Our Products</h1>
-    <input type="text" class="border container w-1/2 p-2 m-5" placeholder="Search for a product">
+    <input id="search" type="text" class="border container w-1/2 p-2 m-5" placeholder="Search for a product">
 </section> 
 <section class="grid text-center m-6 p-5 ">
-<div class="grid grid-cols-2 gap-7 md:grid-cols-4 mt-5">
+<div id="product-container" class="grid grid-cols-2 gap-7 md:grid-cols-4 mt-5">
     <div>
         <img src="images/prod1.png" class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant image">
         <p class="font-medium">Monstera Plant</p>
@@ -108,3 +127,4 @@
     </div>
 </div>
 </section>
+<script src="product.js"></script>
