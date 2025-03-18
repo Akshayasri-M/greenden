@@ -11,3 +11,6 @@ GreenDen is a beautifully designed, responsive website for plant enthusiasts, bu
 Frontend: HTML, CSS (Tailwind CSS)
 Responsive Design: Tailwind CSS grid system and utility classes
 No JS Required: This project is built with HTML and CSS only, ensuring simplicity and fast loading times.
+
+# Repository
+https://akshayasri-m.github.io/greenden/
